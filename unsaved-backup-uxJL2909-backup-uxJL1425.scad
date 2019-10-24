@@ -1,0 +1,146 @@
+    color("white"){
+square([40,80],center=true);
+ }
+color("black"){
+
+        translate([0,35,0.1]){
+        square([40,1],center=true);
+    }
+        translate([0,25,0.1]){
+        square([40,1],center=true);
+    }
+        translate([0,15,0.1]){
+        square([40,1],center=true);
+    }
+        translate([0,5,0.1]){
+        square([40,1],center=true);
+    }
+        translate([0,-5,0.1]){
+        square([40,1],center=true);
+    }
+        translate([0,-15,0.1]){
+        square([40,1],center=true);
+    }
+        translate([0,-25,0.1]){
+        square([40,1],center=true);
+    }
+        translate([0,-35,0.1]){
+        square([40,1],center=true);
+    }
+
+        translate([5,0,0.1]){
+        square([1,80],center=true);
+    }
+        translate([-5,0,0.1]){
+        square([1,80],center=true);
+    }
+        translate([-15,0,0.1]){
+        square([1,80],center=true);
+    }
+        translate([15,0,0.1]){
+        square([1,80],center=true);
+    }
+}
+translate([0,10,2.5]){
+   sphere(2,$fn=40); 
+}
+translate([0,-10,2.5]){
+   sphere(2,$fn=40); 
+}
+color("orange"){
+    translate([0,20,1.5]){
+        cylinder(2,0.5,0.5,$fn=40,center=true);
+    }
+        translate([10,10,1.5]){
+        cylinder(2,0.5,0.5,$fn=40,center=true);
+    }
+        translate([10,-10,1.5]){
+        cylinder(2,0.5,0.5,$fn=40,center=true);
+    }
+}   
+color("white"){
+    translate([0,-20,1.5]){
+        cylinder(2,0.5,0.5,$fn=40,center=true);
+    }
+        translate([-10,10,1.5]){
+        cylinder(2,0.5,0.5,$fn=40,center=true);
+    }
+        translate([-10,-10,1.5]){
+        cylinder(2,0.5,0.5,$fn=40,center=true);
+    } 
+}
+color("black"){
+        translate([0,0,1.5]){
+        cylinder(2,0.5,0.5,$fn=40,center=true);
+    }
+} 
+ color("black"){   
+    translate([20,0,2]){
+        cube([1,80,5],center=true);
+        }
+
+    translate([-20,0,2]){
+        cube([1,80,5],center=true);
+        }
+
+    translate([0,40,2]){
+        cube([40,1,5],center=true);
+        }
+
+    translate([0,-40,2]){   
+        cube([40,1,5],center=true);
+        }
+}
+color("white"){
+    translate([17.5,0,1]){
+        difference(){
+        cube([6,30,3],center=true);
+            cube([4,29,10],center=true);      
+        }
+    }
+}
+color("orange"){
+    translate([-17.5,0,1]){
+        difference(){
+        cube([6,30,3],center=true);
+            cube([4,29,10],center=true);      
+        }
+    }
+}
+color("orange"){
+    translate([13,36,1]){
+        difference(){
+        cube([7,7,5],center=true);
+            cube([1,10,6],center=true);      
+        }
+        
+    }
+    translate([13,16,1]){
+        rotate([90,0,0]){
+            difference(){
+                cube([1,1,43],center=true);
+                    cube([5,0.5,41],center=true);
+            }
+        }
+    }
+    translate([-13,36,1]){
+        difference(){
+        cube([7,7,5],center=true);
+            cube([1,10,6],center=true);      
+        }
+      
+    }
+    translate([-13,16,1]){
+        rotate([90,0,0]){
+            difference(){
+                cube([1,1,43],center=true);
+                    cube([5,0.5,41],center=true);
+            }
+       }
+   }
+   translate([0,-5,1]){
+    cube([26.5,1,1],center=true);
+    }
+}
+
+
