@@ -47,7 +47,7 @@ translate([0,10,2.5]){
 translate([0,-10,2.5]){
    sphere(2,$fn=40); 
 }
-color("orange"){
+color("Beige"){
     translate([0,20,1.5]){
         cylinder(2,0.5,0.5,$fn=40,center=true);
     }
@@ -57,9 +57,8 @@ color("orange"){
         translate([10,-10,1.5]){
         cylinder(2,0.5,0.5,$fn=40,center=true);
     }
-}   
-color("white"){
-    translate([0,-20,1.5]){
+
+        translate([0,-20,1.5]){
         cylinder(2,0.5,0.5,$fn=40,center=true);
     }
         translate([-10,10,1.5]){
@@ -68,12 +67,67 @@ color("white"){
         translate([-10,-10,1.5]){
         cylinder(2,0.5,0.5,$fn=40,center=true);
     } 
-}
-color("black"){
         translate([0,0,1.5]){
         cylinder(2,0.5,0.5,$fn=40,center=true);
     }
 } 
+
+color("DarkOrange"){
+            translate([0,20,2.3]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+                sphere(0.4,$fn=20,center=true);
+    }
+                translate([0,20,0.7]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+    }
+                translate([10,10,2.3]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+                sphere(0.4,$fn=20,center=true);
+    }
+                translate([10,10,0.7]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+    }
+                translate([10,-10,2.3]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+                sphere(0.4,$fn=20,center=true);
+    }
+                translate([10,-10,0.7]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+    }
+} 
+
+color("black"){
+                translate([0,0,2.3]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+                sphere(0.4,$fn=20,center=true);
+    }
+                translate([0,0,0.7]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+    }
+}
+color("white"){
+                translate([0,-20,2.3]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+                sphere(0.4,$fn=20,center=true);
+    }
+                translate([0,-20,0.7]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+    }
+                translate([-10,-10,2.3]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+                sphere(0.4,$fn=20,center=true);
+    }
+                translate([-10,-10,0.7]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+    }
+                translate([-10,10,2.3]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+                sphere(0.4,$fn=20,center=true);
+    }
+                translate([-10,10,0.7]){
+        cylinder(0.3,0.6,0.6,$fn=40,center=true);
+    }
+}
  color("black"){   
     translate([20,0,2]){
         cube([1,80,5],center=true);
@@ -99,7 +153,7 @@ color("white"){
         }
     }
 }
-color("orange"){
+color("DarkOrange"){
     translate([-17.5,0,1]){
         difference(){
         cube([6,30,3],center=true);
@@ -108,14 +162,14 @@ color("orange"){
     }
 }
 color("orange"){
-    translate([13,36,1]){
+    translate([13.7,36,1]){
         difference(){
         cube([7,7,5],center=true);
             cube([1,10,6],center=true);      
         }
         
     }
-    translate([13,16,1]){
+    translate([13.7,16,1]){
         rotate([90,0,0]){
             difference(){
                 cube([1,1,43],center=true);
@@ -123,14 +177,14 @@ color("orange"){
             }
         }
     }
-    translate([-13,36,1]){
+    translate([-13.7,36,1]){
         difference(){
         cube([7,7,5],center=true);
             cube([1,10,6],center=true);      
         }
       
     }
-    translate([-13,16,1]){
+    translate([-13.7,16,1]){
         rotate([90,0,0]){
             difference(){
                 cube([1,1,43],center=true);
@@ -143,4 +197,92 @@ color("orange"){
     }
 }
 
+color("Beige"){
+    translate([0,10,0.5]){
+        difference(){
+            cube([6,6,2],center=true);
+            cube([4,4,4],center=true);
+        }
+    }
+    
+    translate([0,-10,0.5]){
+        difference(){
+            cube([6,6,2],center=true);
+            cube([4,4,4],center=true);
+        }
+    }
+    
+    translate([10,0,0.5]){
+        
+        difference(){
+            cube([6,6,2],center=true);
+            cube([4,4,4],center=true);
+        }
+    }
+    
+    translate([-10,0,0.5]){
+        difference(){
+            cube([6,6,2],center=true);
+            cube([4,4,4],center=true);
+        }
+    }
+}   
+color("DarkOrange"){
+    translate([10,0,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([11,0,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([11,1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([10,1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([10,-1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([11,-1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([9,0,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([9,1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([9,-1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+}
 
+color("white"){
+    translate([-10,0,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([-11,0,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([-11,-1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([-10,-1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([-10,1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([-11,1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([-9,1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([-9,-1,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+        translate([-9,0,1]){
+        sphere(0.5,$fn=20,center=true);
+    }
+}
